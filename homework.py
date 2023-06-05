@@ -348,3 +348,24 @@
 
 # result = get_summ('Learn', 'python')
 # print(result)
+
+def weather(temperature):
+
+    if temperature < 0:
+        return 'холодно'
+    elif temperature >= 0 and temperature < 15:
+        return 'прохладно'
+    elif temperature >= 15 and temperature < 25:
+        return 'тепло'
+    else:
+        return 'жарко'  
+temperature = int(input('Сколько градусов на улице?'))
+result = weather(temperature)
+print(f'Сейчас на улице {result}') 
+
+
+
+
+
+
+
