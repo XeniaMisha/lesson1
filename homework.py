@@ -408,35 +408,38 @@
 
 
 stock = [
-		{'name': 'iPhone 12', 'stock': 24, 'price': 65432.1,
+		{'name': 'iPhone', 'stock': 24, 'price': 65432.1,
                 'discount': 25},
 		{'name': 'Samsung Galaxy S21', 'stock': 8, 'price': 50000.0,
                 'discount': 10},
 		{'name': '', 'stock': 18, 'price': 10000.0, 'discount': 10}
 ]
 
-def discounted(price, discount, max_dis = 12):
+def discounted(price, discount, max_dis = 30, phone_name = ''):
     price = abs(price)
     discount = abs(discount)
     max_dis = abs(max_dis)
     if max_dis >= 100:
         raise ValueError('Imposible')
     if discount >= max_dis:
-        price_w_doscount = price
+        return price
+    elif 'iphone' in phone_name.lower() or not phone_name:
+        return price
     else:
-        price_w_doscount = price - price * discount / 100
-    print(price_w_doscount)
+        return price - price * discount / 100
 
-for phone in stock
-
-discounted(100, 5)
-
-
+for phone in stock:
+    phone['final_price'] = discounted(phone['price'], phone['discount'], phone_name=phone['name'])
+    
+print(stock)
 
 
-def count_average(students_scores):
-    scores_sum = 0
-    for score in students_scores:
-        scores_sum += score
-    scores_avg = scores_sum / len(students_scores)
-    return scores_avg
+
+
+
+# def count_average(students_scores):
+#     scores_sum = 0
+#     for score in students_scores:
+#         scores_sum += score
+#     scores_avg = scores_sum / len(students_scores)
+#     return scores_avg
