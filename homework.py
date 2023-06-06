@@ -349,23 +349,94 @@
 # result = get_summ('Learn', 'python')
 # print(result)
 
-def weather(temperature):
+# def weather(temperature):
 
-    if temperature < 0:
-        return 'холодно'
-    elif temperature >= 0 and temperature < 15:
-        return 'прохладно'
-    elif temperature >= 15 and temperature < 25:
-        return 'тепло'
+#     if temperature < 0:
+#         return 'холодно'
+#     elif temperature >= 0 and temperature < 15:
+#         return 'прохладно'
+#     elif temperature >= 15 and temperature < 25:
+#         return 'тепло'
+#     else:
+#         return 'жарко'  
+# temperature = int(input('Сколько градусов на улице?'))
+# result = weather(temperature)
+# print(f'Сейчас на улице {result}') 
+
+
+# magicians = ['alice', 'david', 'carolina']
+# for magician in magicians:
+#     print(magician)
+
+
+# guests = ['kate', 'lucie', 'andrew']
+# for guest in guests:
+#     print(guest)
+
+
+# def discounted(price, discount):
+#     price_with_discount = price - (price * discount / 100)
+#     print(price_with_discount)
+
+# discounted(100, 50)
+# discounted(100, 5)
+
+
+# grades = [4, 5, 3, 4, 5]
+# total_grade = sum(grades)
+# print("Общая оценка по классу:", total_grade)
+
+# students_scores = [3, 5, 4, 3, 5, 5]
+
+# scores_sum = 0
+# for scores in students_scores:
+#     scores_sum += scores
+
+# class_scores = scores_sum / len(students_scores)
+# print(f'Средняя оценка по классу: {class_scores}')
+
+
+# # students_scores = [3, 5, 4, 4, 2]
+			
+# # scores_sum = 0
+# # for score in students_scores:
+# #     scores_sum += score
+# #     print(scores_sum)
+# # scores_avg = scores_sum / len(students_scores)
+# # print(f"Средняя оценка {scores_avg}")
+
+
+
+stock = [
+		{'name': 'iPhone 12', 'stock': 24, 'price': 65432.1,
+                'discount': 25},
+		{'name': 'Samsung Galaxy S21', 'stock': 8, 'price': 50000.0,
+                'discount': 10},
+		{'name': '', 'stock': 18, 'price': 10000.0, 'discount': 10}
+]
+
+def discounted(price, discount, max_dis = 12):
+    price = abs(price)
+    discount = abs(discount)
+    max_dis = abs(max_dis)
+    if max_dis >= 100:
+        raise ValueError('Imposible')
+    if discount >= max_dis:
+        price_w_doscount = price
     else:
-        return 'жарко'  
-temperature = int(input('Сколько градусов на улице?'))
-result = weather(temperature)
-print(f'Сейчас на улице {result}') 
+        price_w_doscount = price - price * discount / 100
+    print(price_w_doscount)
+
+for phone in stock
+
+discounted(100, 5)
 
 
 
 
-
-
-
+def count_average(students_scores):
+    scores_sum = 0
+    for score in students_scores:
+        scores_sum += score
+    scores_avg = scores_sum / len(students_scores)
+    return scores_avg
