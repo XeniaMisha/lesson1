@@ -407,31 +407,31 @@
 
 
 
-stock = [
-		{'name': 'iPhone', 'stock': 24, 'price': 65432.1,
-                'discount': 25},
-		{'name': 'Samsung Galaxy S21', 'stock': 8, 'price': 50000.0,
-                'discount': 10},
-		{'name': '', 'stock': 18, 'price': 10000.0, 'discount': 10}
-]
+# stock = [
+# 		{'name': 'iPhone', 'stock': 24, 'price': 65432.1,
+#                 'discount': 25},
+# 		{'name': 'Samsung Galaxy S21', 'stock': 8, 'price': 50000.0,
+#                 'discount': 10},
+# 		{'name': '', 'stock': 18, 'price': 10000.0, 'discount': 10}
+# ]
 
-def discounted(price, discount, max_dis = 30, phone_name = ''):
-    price = abs(price)
-    discount = abs(discount)
-    max_dis = abs(max_dis)
-    if max_dis >= 100:
-        raise ValueError('Imposible')
-    if discount >= max_dis:
-        return price
-    elif 'iphone' in phone_name.lower() or not phone_name:
-        return price
-    else:
-        return price - price * discount / 100
+# def discounted(price, discount, max_dis = 30, phone_name = ''):
+#     price = abs(price)
+#     discount = abs(discount)
+#     max_dis = abs(max_dis)
+#     if max_dis >= 100:
+#         raise ValueError('Imposible')
+#     if discount >= max_dis:
+#         return price
+#     elif 'iphone' in phone_name.lower() or not phone_name:
+#         return price
+#     else:
+#         return price - price * discount / 100
 
-for phone in stock:
-    phone['final_price'] = discounted(phone['price'], phone['discount'], phone_name=phone['name'])
+# for phone in stock:
+#     phone['final_price'] = discounted(phone['price'], phone['discount'], phone_name=phone['name'])
     
-print(stock)
+# print(stock)
 
 
 
@@ -443,3 +443,39 @@ print(stock)
 #         scores_sum += score
 #     scores_avg = scores_sum / len(students_scores)
 #     return scores_avg
+
+
+
+
+def hello_user():
+    try:
+        while True:
+            user_say = input('Скажи что-нибудь: ')
+            if user_say == 'Пока':
+                print('Ну пока!')
+                break
+            else:
+                print('Сам ты {}'.format(user_say))
+    except KeyboardInterrupt:
+        print('Пока!')
+
+hello_user()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
