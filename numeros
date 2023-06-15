@@ -3,7 +3,7 @@ print(16 - 8)
 print(4 * 2)
 print(64 / 8)
 print(2 ** 3)
+print('hola')
 
+print('Mi numero favorito es: ')
 
-my_fav_number = 19
-print('Mi numero favorito es: ' + str(my_fav_number))
