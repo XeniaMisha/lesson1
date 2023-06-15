@@ -397,7 +397,7 @@
 
 
 # # students_scores = [3, 5, 4, 4, 2]
-			
+
 # # scores_sum = 0
 # # for score in students_scores:
 # #     scores_sum += score
@@ -447,43 +447,80 @@
 
 
 
-def hello_user():
-    try:
-        while True:
-            user_say = input('Скажи что-нибудь: ')
-            if user_say == 'Пока':
-                print('Ну пока!')
-                break
-            else:
-                print('Сам ты {}'.format(user_say))
-    except KeyboardInterrupt:
-        print('Пока!')
+# def hello_user():
+#     try:
+#         while True:
+#             user_say = input('Скажи что-нибудь: ')
+#             if user_say == 'Пока':
+#                 print('Ну пока!')
+#                 break
+#             else:
+#                 print('Сам ты {}'.format(user_say))
+#     except KeyboardInterrupt:
+#         print('Пока!')
 
-hello_user()
+# hello_user()
 
 
 
-def discounted(price, discount, max_discount=20):
-    try:
-        price = float(price)
-        discount = float(discount)
-        max_discount = int(max_discount)
-    except (ValueError, TypeError):
-        raise ValueError('Некорректные аргументы')
+# def discounted(price, discount, max_discount=20):
+#     try:
+#         price = float(price)
+#         discount = float(discount)
+#         max_discount = int(max_discount)
+#     except (ValueError, TypeError):
+#         raise ValueError('Некорректные аргументы')
 
-    price = abs(price)
-    discount = abs(discount)
-    max_discount = abs(max_discount)
+#     price = abs(price)
+#     discount = abs(discount)
+#     max_discount = abs(max_discount)
     
-    if max_discount >= 100:
-        raise ValueError('Слишком большая максимальная скидка')
+#     if max_discount >= 100:
+#         raise ValueError('Слишком большая максимальная скидка')
 
-    if discount >= max_discount:
-        return price
+#     if discount >= max_discount:
+#         return price
+#     else:
+#         return price - (price * discount / 100)
+
+
+def main(age):
+    if age < 7:
+        return 'Ты ходишь в детский сад'
+    elif age >= 7 and age < 18:
+        return 'Ты школьник'
     else:
-        return price - (price * discount / 100)
+        return 'Ты учишься в универе или уже работаешь'
+    
+age = int(input('How old are you?'))
+result = main(age)
+print(result)
 
 
+def main(age):
+    if age < 7:
+        return 'Eres un niñ@'
+    elif age >= 7 and age < 18:
+        return 'estudias en secundaria o terminas bachillerato'
+    else:
+        return 'Estuias en Universidad o ya estas trabajando'
+    
+age = int(input('Cuantos años tienes?'))    
+result = main(age)
+print(result)
+
+
+def main(age):
+    if age < 7:
+        return 'Ты ходишь в детский сад'
+    elif age >= 7 and age < 18:
+        return 'Ты школьник'
+    else:
+        return 'Ты учишься в универе или уже работаешь'
+    
+age = int(input('How old are you?'))
+result = main(age)
+print(result)
 
 
 
