@@ -10,4 +10,13 @@ message = 'My favorite number is: ' + str(my_fav_num)
 print(message)
 
 
-import this
+num = 4 / 2
+print(num)
+
+num = 4 // 2
+print(num)
+
+a = 6
+b = 3
+c = a // b
+print(c)
