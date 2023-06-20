@@ -28,3 +28,28 @@ instruments = ['casio', 'yamaha', 'artesia', 'korg', 'roland']
 instruments[2] = 'kawai'
 message = instruments[2].title() + ' is my favorite brand of piano!'
 print(message)
+
+
+guests = ['Luba', 'Mariana', 'Katia', 'Lena']
+print('\nHello, my dear ' + guests[0] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[1] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[2] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[3] + '! See you today at 8!')
+print()
+print(guests[3], "can't come")
+guests[3] = 'Sveta'
+print('\nHello, my dear ' + guests[0] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[1] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[2] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[3] + '! See you today at 8!')
+print('\nInvite more guests')
+guests.insert(0, 'Erich')
+guests.insert(3, 'Yaric')
+guests.append('Igor')
+print('\nHello, my dear ' + guests[0] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[1] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[2] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[3] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[4] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[5] + '! See you today at 8!')
+print('\nHello, my dear ' + guests[6] + '! See you today at 8!')
