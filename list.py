@@ -88,3 +88,30 @@ print(to_visit)
 
 guests = ['Luba', 'Mariana', 'Katia', 'Lena']
 print(len(guests))
+
+
+languages = ['spanish', 'english', 'french', 'italian', 'russian', 'japanese']
+print(languages)
+print(languages[3])
+print(languages[-4])
+print('\nI speak', languages[0], 'very well!')
+print(languages[-5].title(), languages[-3].upper())
+languages[5] = 'germany'
+print(languages)
+languages.append('greek')
+languages.insert(3, 'chinese')
+languages.insert(-4, 'portuguese')
+print(languages)
+del languages[5]
+print(len(languages))
+so_so = languages.pop()
+print('\nI speak', so_so, 'little bit')
+can_read = languages.pop(2)
+print('\nI can read', can_read.capitalize())
+print(languages)
+difficult = 'chinese'
+languages.remove(difficult)
+print('\nThe most difficult language for me is:', difficult)
+print(sorted(languages))
+languages.sort()
+print(languages)
