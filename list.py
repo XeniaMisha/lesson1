@@ -69,3 +69,17 @@ print('\nOur meeting is still on, ', guests[1])
 del guests[1]
 del guests[0]
 print(guests)
+
+
+to_visit = ['Italy', 'France', 'Ireland', 'Norway', 'Finland', 'UK', 'Germany']
+print(sorted(to_visit))
+print(to_visit)
+print(sorted(to_visit, reverse=True))
+to_visit.reverse()
+print(to_visit)
+to_visit.reverse()
+print(to_visit)
+to_visit.sort()
+print(to_visit)
+to_visit.sort(reverse=True)
+print(to_visit)
