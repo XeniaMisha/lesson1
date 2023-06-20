@@ -46,6 +46,7 @@ print('\nInvite more guests')
 guests.insert(0, 'Erich')
 guests.insert(3, 'Yaric')
 guests.append('Igor')
+print(len(guests))
 print('\nHello, my dear ' + guests[0] + '! See you today at 8!')
 print('\nHello, my dear ' + guests[1] + '! See you today at 8!')
 print('\nHello, my dear ' + guests[2] + '! See you today at 8!')
@@ -83,3 +84,7 @@ to_visit.sort()
 print(to_visit)
 to_visit.sort(reverse=True)
 print(to_visit)
+
+
+guests = ['Luba', 'Mariana', 'Katia', 'Lena']
+print(len(guests))
