@@ -85,4 +85,16 @@ for my_animal in animals:
 print('The animals of my friend are:')
 for him_animals in friend_animals:
     print(him_animals)
+print()
+
+
+dishes = ('pasta', 'hot dog', 'salad', 'hamburger', 'pizza')
+for dish in dishes:
+    print(dish)
+print()
+
+dishes = ('sandwich', 'hot dog', 'kebab', 'hamburger', 'pizza')
+for dish in dishes:
+    print(dish)
+
 
